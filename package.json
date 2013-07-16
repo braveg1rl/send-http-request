@@ -1,0 +1,31 @@
+{
+  "name": "send-http-request",
+  "description": "Function that sends a HTTP request, returning promise.",
+  "keywords": [],
+  "version": "0.0.0",
+  "author": "Meryn Stol <merynstol@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/meryn/send-http-request",
+  "bugs": "https://github.com/meryn/send-http-request/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/meryn/send-http-request.git"
+  },
+  "private": false,
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "~1.6.2",
+    "mocha": "1.x.x"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "main": "lib/send-http-request.js",
+  "scripts": {
+    "prepublish": "npm test",
+    "pretest": "make build",
+    "test": "make test"
+  }
+}
