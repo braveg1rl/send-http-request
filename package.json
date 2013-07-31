@@ -2,7 +2,7 @@
   "name": "send-http-request",
   "description": "Function that sends a HTTP request, returning promise.",
   "keywords": [],
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Meryn Stol <merynstol@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/meryn/send-http-request",
