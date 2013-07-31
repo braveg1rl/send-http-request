@@ -12,7 +12,10 @@
     "url": "git://github.com/meryn/send-http-request.git"
   },
   "private": false,
-  "dependencies": {},
+  "dependencies": {
+    "xmlhttprequest": "1.5.x",
+    "make-promise": "0.2.x"
+  },
   "devDependencies": {
     "coffee-script": "~1.6.2",
     "mocha": "1.x.x"

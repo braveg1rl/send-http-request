@@ -1,8 +1,26 @@
 # send-http-request [![Build Status](https://travis-ci.org/meryn/send-http-request.png?branch=master)](https://travis-ci.org/meryn/send-http-request) [![Dependency Status](https://david-dm.org/meryn/send-http-request.png)](https://david-dm.org/meryn/send-http-request)
 
-Function that sends a HTTP request, returning promise.
+Function that sends a HTTP request, returning a promise.
+
+It uses XMLHTTPRequest, and will use the [xmlhttprequest](https://npmjs.org/package/xmlhttprequest) package in Node.js.
 
 ## Usage
+
+```javascript
+sendRequest = require("send-http-request")
+sendRequest("GET","http://localhost/").then(
+  function(response) { console.log(response) },
+  function(error) { console.error(error) }
+)
+```
+
+You may pass optional headers and data arguments. If only one extra parameter is given, it's assumed to be the headers object.
+
+The response object has the following methods:
+
+* getText()
+* getStatusCode()
+* getHeader(name)
 
 ## Credits
 
