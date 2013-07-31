@@ -25,11 +25,6 @@ module.exports = class Response
   getText: ->
     @text
 
-  getData: ->
-    return @data if @data?
-    return @data if @isValidJSON()
-    return null    
-    
   isSuccess: ->
     @statusCode is 200
   
@@ -41,10 +36,6 @@ module.exports = class Response
     
   isInternalError: ->
     @statusCode in [500]
-    
-  isValid: ->
-    return @isValidJSON() if @isJSON()
-    return true
 
   isJSON: ->
     @hasContentType "application/json"
@@ -58,13 +49,3 @@ module.exports = class Response
   hasContentType: (contentType) ->
     return false unless headerValue = @getHeader('content-type')
     return headerValue.indexOf(contentType) is 0
-  
-  isValidJSON: ->
-    try
-      @parseAsJSON()
-      return true
-    catch error
-      return false
-
-  parseAsJSON: ->
-    @data = JSON.parse @text
