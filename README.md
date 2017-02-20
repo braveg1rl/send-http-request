@@ -1,5 +1,7 @@
 # send-http-request [![Build Status](https://travis-ci.org/meryn/send-http-request.png?branch=master)](https://travis-ci.org/meryn/send-http-request) [![Dependency Status](https://david-dm.org/meryn/send-http-request.png)](https://david-dm.org/meryn/send-http-request)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/braveg1rl/send-http-request.svg)](https://greenkeeper.io/)
+
 Function that sends a HTTP request, returning a promise.
 
 It uses XMLHTTPRequest, and will use the [xmlhttprequest](https://npmjs.org/package/xmlhttprequest) package in Node.js.
