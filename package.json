@@ -13,12 +13,12 @@
   },
   "private": false,
   "dependencies": {
-    "xmlhttprequest": "1.5.x",
-    "make-promise": "0.2.x"
+    "xmlhttprequest": "~1.8.0",
+    "make-promise": "~0.3.0"
   },
   "devDependencies": {
-    "coffee-script": "~1.6.2",
-    "mocha": "1.x.x"
+    "coffee-script": "~1.12.4",
+    "mocha": "^3.2.0"
   },
   "optionalDependencies": {},
   "engines": {
